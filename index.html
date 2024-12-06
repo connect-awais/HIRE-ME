@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <div class="formBox">
+            <h2>Contact Us</h2>
+            <p>You will hear from us at the earliest!</p>
+            <form id="myForm" action="https://formspree.io/f/mbljbgjq" method="POST" onsubmit="return validateForm()">
+                <div class="nameInp">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" placeholder=" Your Full Name" name="name" id="name">
+
+                </div>
+                <div class="mailInp">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="email" id="mail" placeholder="Your Email">
+                </div>
+                <div class="queryInp">
+                    <textarea name="query" id="query" cols="30" rows="5"
+                        placeholder="Your message"></textarea>
+                </div>
+                <div class="submitBtn">
+                    <button id="btn" type="submit">Submit</button>
+                </div>
+            </form>
+            <p id="errorMessage" style="color: red; display: none;">Please fill the fields</p> <!-- Error message -->
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
